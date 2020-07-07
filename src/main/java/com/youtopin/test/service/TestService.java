@@ -1,20 +1,20 @@
 package com.youtopin.test.service;
 
-import com.youtopin.test.service.generators.TestGenerator;
+import com.youtopin.test.service.generators.ExampleGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class TestService {
-    private final TestGenerator testGenerator;
+    private final ExampleGenerator exampleGenerator;
 
     @Autowired
-    public TestService(TestGenerator testGenerator) {
-        this.testGenerator = testGenerator;
+    public TestService(ExampleGenerator exampleGenerator) {
+        this.exampleGenerator = exampleGenerator;
     }
 
     public void runTest(String input){
-        System.out.println(testGenerator.generate(input));
+        System.out.println(exampleGenerator.generate(input));
     }
 
 }
