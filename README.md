@@ -8,7 +8,7 @@ As you can see, This application has a test controller which accepts a *query st
 TestService is supposed to generate a string. The way this string is generated is by concating `prefix` in `@Generator` to the input of `generate()` method and return the result.
 
 So for example, for input of `test` we expect TestService to print: `Example1 - test` and for input `hello` we expect TestService to print `Example1 - hello`.
-If we create another generator, we expect everything to work in same way.
+If we create another generator, we expect everything to work in same way, by concating the new generator prefix to input of method.
 
 As you can see, you cant build the application because it needs `Generator` annotation. Your task is to create a library that contains this annotation.
 
