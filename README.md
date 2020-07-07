@@ -4,7 +4,7 @@ Purpose of this test is to value the abilities of developer in writing their own
 
 ## Task
 
-As you can see, This application as a test controller which accepts a *query string* model. The input field from this query string is then passed to a service (TestService).
+As you can see, This application has a test controller which accepts a *query string* model. The input field from this query string is then passed to a service (TestService).
 TestService is supposed to generate an string. The way this string is generated is by concating `prefix` in `@Generator` to the input of `generate()` method and return the result.
 
 So for example, for input of `test` we expect TestService to print: `Example1 - test` and for input `hello` we expect TestService to print `Example1 - hello`.
